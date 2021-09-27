@@ -27,12 +27,12 @@ Designation:
 
 Preferred language
 <input type="checkbox" id="java" name="JAVA" value="JAVA">
- JAVA<br>
+ JAVA
 <input type="checkbox" id="php" name="PHP" value="PHP">
-PHP<br>
+PHP
 <input type="checkbox" id="cpp" name="C++" value="C++">
- C++<br>
-<br>
+ C++
+ <br>
 <?php echo $validatecheckbox; ?>
 
 <?php echo $j;?>
