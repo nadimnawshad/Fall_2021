@@ -21,7 +21,7 @@ if(empty($_REQUEST["fname"]) || (strlen($_REQUEST["fname"])<5))
 }
 else
 {
-    $name=$_REQUEST["fname"];
+    $validatefname=$fname;
 }
 
 if(empty($_REQUEST["lname"]) || (strlen($_REQUEST["lname"])<5))
@@ -31,17 +31,17 @@ if(empty($_REQUEST["lname"]) || (strlen($_REQUEST["lname"])<5))
 }
 else
 {
-    $name=$_REQUEST["lname"];
+    $validatelname=$lname;
 }
 
-if(empty($_REQUEST["age"]) || is_numeric($_REQUEST["lname"]))
+if(empty($_REQUEST["age"]) || is_numeric($_REQUEST["age"]))
 {
     $validatelname= "Please enter your age";
 
 }
 else
 {
-    $name=$_REQUEST["age"];
+    $validateage=$_REQUEST["age"];
 }
 
 if(empty($email) || !preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix",$email))
@@ -49,7 +49,7 @@ if(empty($email) || !preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\
     $validateemail="Please enter email";
 }
 else{
-    $validateemail= "your email is ".$email;
+    $validateemail= $email;
 }
 
 
