@@ -34,9 +34,9 @@ else
     $validatelname=$lname;
 }
 
-if(empty($_REQUEST["age"]) || is_numeric($_REQUEST["age"]))
+if(empty($_REQUEST["age"]) || !is_numeric($_REQUEST["age"]))
 {
-    $validatelname= "Please enter your age";
+    $validateage= "Please enter your age";
 
 }
 else
