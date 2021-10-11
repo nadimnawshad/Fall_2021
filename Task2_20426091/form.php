@@ -35,17 +35,10 @@ PHP
 <br>
 <?php echo $validatecheckbox; ?>
 
-<?php $j;?>
-
-<?php echo $p;?>
-
-<?php echo $c;?>
-
-<?php $language = array($j,$p,$c);?>
 <br>
-Email: <input type="email" name="email"> <?php echo $validateemail; ?>
+Email: <input type="email" name="email"> 
 <br>
-Password: <input type="password" name="password"> <?php echo $validateemail; ?>
+Password: <input type="password" name="password"> 
 <br>
 Choose a file : <input type="file" name="filetoupload">
 <br>
